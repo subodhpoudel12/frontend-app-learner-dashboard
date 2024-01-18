@@ -18,7 +18,7 @@ const messages = defineMessages({
   },
   help: {
     id: 'learnerVariantDashboard.help.label',
-    defaultMessage: 'Help',
+    defaultMessage: 'Do you need help',
     description: 'The text for the link to the Help Center',
   },
   profile: {
@@ -58,7 +58,7 @@ const messages = defineMessages({
   },
   discoverNew: {
     id: 'learnerVariantDashboard.discoverNew',
-    defaultMessage: 'Discover New',
+    defaultMessage: 'Here are the course',
     description: 'Header link for switching to discover page.',
   },
   logoAltText: {

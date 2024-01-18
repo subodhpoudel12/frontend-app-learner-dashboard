@@ -31,7 +31,7 @@ exports[`ExpandedHeader render 1`] = `
       onClick={[MockFunction findCoursesNavClicked("http://localhost:18000/courseSearchUrl")]}
       variant="inverse-primary"
     >
-      Discover New
+    Find Courses
     </Button>
     <WidgetNavbar
       placement="expendedNavbar"

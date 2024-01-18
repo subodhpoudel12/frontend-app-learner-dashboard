@@ -24,7 +24,7 @@ exports[`CollapseMenuBody render 1`] = `
     onClick={[MockFunction findCoursesNavDropdownClicked("http://localhost:18000/courseSearchUrl")]}
     variant="inverse-primary"
   >
-    Discover New
+  Find Courses
   </Button>
   <WidgetNavbar
     placement="collapsedNavbar"
@@ -93,7 +93,7 @@ exports[`CollapseMenuBody render unauthenticated 1`] = `
     onClick={[MockFunction findCoursesNavDropdownClicked("http://localhost:18000/courseSearchUrl")]}
     variant="inverse-primary"
   >
-    Discover New
+    Find New course
   </Button>
   <WidgetNavbar
     placement="collapsedNavbar"
