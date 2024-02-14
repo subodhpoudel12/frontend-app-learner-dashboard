@@ -74,6 +74,7 @@ export const MasqueradeBar = () => {
             <StatefulButton
               disabled={!masqueradeInput.length}
               variant="brand"
+              color="blue"
               onClick={handleMasqueradeSubmit(masqueradeInput)}
               labels={{
                 default: formatMessage(messages.SubmitButton),
