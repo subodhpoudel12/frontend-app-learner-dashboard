@@ -26,6 +26,7 @@ export const BeginCourseButton = ({ cardId }) => {
       as="a"
       href="#"
       onClick={handleClick}
+      size="sm"
     >
       {formatMessage(messages.beginCourse)}
     </ActionButton>

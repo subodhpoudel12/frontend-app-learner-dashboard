@@ -5,3 +5,7 @@
 a.course-card-title {
   color: $black;
 }
+a.course-card-title:hover {
+  color: $black;
+  text-decoration: none;
+}

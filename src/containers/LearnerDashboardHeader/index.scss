@@ -1,10 +1,11 @@
 .dropdown-menu-collapse {
-  width: 100vw;
+  width: 50vw;
   position: absolute;
   left: 0;
 }
 
 .learner-variant-header {
+  background-color:#082644;
   a {
     // needed to make the link not resize the header
     border-bottom: 2px solid transparent;

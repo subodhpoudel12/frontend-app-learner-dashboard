@@ -14,7 +14,7 @@ export const CourseCardBanners = ({ cardId }) => {
   return (
     <div className="course-card-banners" data-testid="CourseCardBanners">
       <RelatedProgramsBanner cardId={cardId} />
-      <CourseBanner cardId={cardId} />
+      <CourseBanner cardId={cardId}/>
       <EntitlementBanner cardId={cardId} />
       {isEnrolled && <CertificateBanner cardId={cardId} />}
       {isEnrolled && <CreditBanner cardId={cardId} />}

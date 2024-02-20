@@ -55,6 +55,7 @@ export const CourseFilterControls = ({
         iconBefore={Tune}
         onClick={open}
         disabled={!hasCourses}
+        size="sm"
       >
         {formatMessage(messages.refine)}
       </Button>

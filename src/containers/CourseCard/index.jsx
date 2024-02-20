@@ -32,8 +32,10 @@ export const CourseCard = ({
               <Card.Section className="pt-0">
                 <CourseCardDetails cardId={cardId} />
               </Card.Section>
-              <Card.Footer orientation={orientation}>
+              <Card.Footer orientation={orientation} >
+                {/* <div style={{float:'left'}} >  */}
                 <CourseCardActions cardId={cardId} />
+                {/* </div> */}
               </Card.Footer>
             </Card.Body>
           </div>

@@ -31,6 +31,7 @@ export const UpgradeButton = ({ cardId }) => {
   return (
     <ActionButton
       iconBefore={Locked}
+      size="sm"
       variant="outline-primary"
       disabled={disableUpgradeCourse}
       {...!disableUpgradeCourse && enabledProps}

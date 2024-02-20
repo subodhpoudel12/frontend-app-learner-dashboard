@@ -1,6 +1,10 @@
 @import "@edx/paragon/scss/core/core";
 
 .course-card {
+  // border:2px solid #373737;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  // width: 90%;
   .card {
     .pgn__card-wrapper-image-cap.vertical {
       display: flex;
@@ -23,12 +27,13 @@
       }
 
       .pgn__action-row {
-        align-self: flex-end;
+        align-self: flex-start;
         white-space: nowrap;
       }
     }
 
     .course-card-verify-ribbon-container {
+      background-color: green;
       width: 80%;
       position: absolute;
       bottom: 0;
@@ -53,7 +58,10 @@
     > .alert {
       border-radius: 0;
       box-shadow: none;
-      padding: map-get($spacers, 3) map-get($spacers, 4);
+      padding: map-get($spacers, 2) map-get($spacers, 2);
+      float: left;
+      // display: flex;
+      // justify-content: flex-end;
 
       &:last-of-type {
         border-bottom-left-radius: $alert-border-radius;

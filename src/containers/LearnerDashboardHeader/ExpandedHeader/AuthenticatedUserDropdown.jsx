@@ -21,14 +21,14 @@ export const AuthenticatedUserDropdown = () => {
           as={AvatarButton}
           src={authenticatedUser.profileImage}
           id="user"
-          variant="light"
-          className="p-4"
+          variant="primary"
+          className="p-3"
         >
           <span data-hj-suppress className="d-md-inline">
             {authenticatedUser.username}
           </span>
         </Dropdown.Toggle>
-        <Dropdown.Menu className="dropdown-menu-right">
+        <Dropdown.Menu style={{ backgroundColor: 'rgb(158,155,153)'}} className="dropdown-menu-right">
           { getConfig().ENABLE_EDX_PERSONAL_DASHBOARD && (
             <>
               <Dropdown.Header>{formatMessage(messages.dashboardSwitch)}</Dropdown.Header>
@@ -43,7 +43,6 @@ export const AuthenticatedUserDropdown = () => {
               <Dropdown.Divider />
             </>
           )}
-
           {!dashboard && getConfig().CAREER_LINK_URL && (
             <Dropdown.Item href={`${getConfig().CAREER_LINK_URL}`}>
               {formatMessage(messages.career)}

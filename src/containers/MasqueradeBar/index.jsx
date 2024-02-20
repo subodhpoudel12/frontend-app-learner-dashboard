@@ -61,6 +61,7 @@ export const MasqueradeBar = () => {
             <FormGroup isInvalid={isMasqueradingFailed} className="masquerade-form-input">
               <FormControl
                 value={masqueradeInput}
+                size="sm"
                 onChange={handleMasqueradeInputChange}
                 floatingLabel={formatMessage(messages.StudentNameInput)}
                 aria-labelledby="masquerade-form-label"
@@ -72,9 +73,9 @@ export const MasqueradeBar = () => {
               )}
             </FormGroup>
             <StatefulButton
-              disabled={!masqueradeInput.length}
-              variant="brand"
-              color="blue"
+              // disabled={!masqueradeInput.length}
+              variant="primary"
+              size="sm"
               onClick={handleMasqueradeSubmit(masqueradeInput)}
               labels={{
                 default: formatMessage(messages.SubmitButton),

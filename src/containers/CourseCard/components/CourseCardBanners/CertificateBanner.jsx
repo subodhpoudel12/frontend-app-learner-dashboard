@@ -39,7 +39,7 @@ export const CertificateBanner = ({ cardId }) => {
   }
   if (certificate.isDownloadable) {
     return (
-      <Banner variant="success" icon={CheckCircle}>
+      <Banner variant="secondary" icon={CheckCircle}>
         {formatMessage(messages.certReady)}
         {certificate.certPreviewUrl && (
           <>

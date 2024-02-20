@@ -44,9 +44,9 @@ export const CourseList = () => {
                 <ActiveCourseFilters {...filterOptions} />
               </div>
             )}
-            <div className="d-flex flex-column flex-grow-1">
+            <div  className="d-flex flex-column flex-grow-1">
               {visibleList.map(({ cardId }) => (
-                <CourseCard key={cardId} cardId={cardId} />
+                <CourseCard  key={cardId} cardId={cardId} />
               ))}
               {numPages > 1 && (
                 <Pagination

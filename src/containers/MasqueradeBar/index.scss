@@ -1,4 +1,4 @@
-// @import "@edx/paragon/scss/core/core";
+@import "@edx/paragon/scss/core/core";
 
 .masquerade-bar {
   display: flex;
@@ -17,7 +17,6 @@
       margin-right: map-get($spacers, 3);
     }
   }
-
   .masquerade-form-input {
     margin-bottom: 0;
     flex-grow: 1;

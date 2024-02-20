@@ -8,7 +8,6 @@ import { useLearnerDashboardHeaderData, useIsCollapsed } from '../hooks';
 
 import CollapseMenuBody from './CollapseMenuBody';
 import BrandLogo from '../BrandLogo';
-
 import messages from '../messages';
 
 export const CollapsedHeader = () => {
@@ -32,7 +31,7 @@ export const CollapsedHeader = () => {
             }
             onClick={toggleIsOpen}
             variant="primary"
-            className="p-4"
+            className="p-3"
           />
           <BrandLogo />
         </header>
