@@ -25,7 +25,7 @@ export const AuthenticatedUserDropdown = () => {
             {authenticatedUser.username}
           </span>
         </Dropdown.Toggle>
-        <Dropdown.Menu style={{ backgroundColor: 'rgb(158,155,153)'}} className="dropdown-menu-right">
+        <Dropdown.Menu style={{ backgroundColor: 'rgb(158,155,153)' }} className="dropdown-menu-right">
           {getConfig().ENABLE_EDX_PERSONAL_DASHBOARD && (
             <>
               <Dropdown.Header>{formatMessage(messages.dashboardSwitch)}</Dropdown.Header>

@@ -2,7 +2,10 @@ import React from 'react';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Pagination } from '@edx/paragon';
 import { reduxHooks } from 'hooks';
-import { ActiveCourseFilters, CourseFilterControls } from 'containers/CourseFilterControls';
+import {
+  ActiveCourseFilters,
+  CourseFilterControls,
+} from 'containers/CourseFilterControls';
 import CourseCard from 'containers/CourseCard';
 import NoCoursesView from './NoCoursesView';
 import { useCourseListData, useIsCollapsed } from './hooks';
@@ -12,7 +15,13 @@ import './index.scss';
 export const CourseList = () => {
   const { formatMessage } = useIntl();
   const hasCourses = reduxHooks.useHasCourses();
-  const { filterOptions, setPageNumber, numPages, showFilters, visibleList } = useCourseListData();
+  const {
+    filterOptions,
+    setPageNumber,
+    numPages,
+    showFilters,
+    visibleList,
+  } = useCourseListData();
   const isCollapsed = useIsCollapsed();
   
   return (

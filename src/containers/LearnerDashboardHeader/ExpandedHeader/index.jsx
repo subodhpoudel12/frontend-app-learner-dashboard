@@ -1,7 +1,5 @@
 import React from 'react';
-import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
-import { a } from '@edx/paragon';
 import WidgetNavbar from 'containers/WidgetContainers/WidgetNavbar';
 import urls from 'data/services/lms/urls';
 import { reduxHooks } from 'hooks';
@@ -26,7 +24,6 @@ export const ExpandedHeader = () => {
             className="ml-2 text-white"
             style={{ textDecoration: 'none' }}
             href="/"
-            variant='outline-light'
           >
             {formatMessage(messages.course)}
           </a>
