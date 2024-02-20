@@ -1,26 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 import { Button, Badge } from '@edx/paragon';
-
 import WidgetNavbar from 'containers/WidgetContainers/WidgetNavbar';
 import urls from 'data/services/lms/urls';
 import { reduxHooks } from 'hooks';
 import { COLLAPSED_NAVBAR } from 'widgets/RecommendationsPaintedDoorBtn/constants';
-
 import { findCoursesNavDropdownClicked } from '../hooks';
 import messages from '../messages';
 
 export const CollapseMenuBody = ({ isOpen }) => {
   const { formatMessage } = useIntl();
   const { authenticatedUser } = React.useContext(AppContext);
-
   const dashboard = reduxHooks.useEnterpriseDashboardData();
   const { courseSearchUrl } = reduxHooks.usePlatformSettingsData();
-
   const exploreCoursesClick = findCoursesNavDropdownClicked(urls.baseAppUrl(courseSearchUrl));
 
   return (
@@ -41,7 +36,6 @@ export const CollapseMenuBody = ({ isOpen }) => {
           {formatMessage(messages.discoverNew)}
         </Button>
         <WidgetNavbar placement={COLLAPSED_NAVBAR} />
-        
         {authenticatedUser && (
           <>
             {!!dashboard && (
@@ -59,9 +53,7 @@ export const CollapseMenuBody = ({ isOpen }) => {
             )}
             <Button
               as="a"
-              href={`${getConfig().LMS_BASE_URL}/u/${
-                authenticatedUser.username
-              }`}
+              href={`${getConfig().LMS_BASE_URL}/u/${authenticatedUser.username}`}
               variant="inverse-primary"
             >
               {formatMessage(messages.profile)}

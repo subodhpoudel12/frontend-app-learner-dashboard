@@ -1,12 +1,9 @@
 import React from 'react';
-
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { AppContext } from '@edx/frontend-platform/react';
 import { AvatarButton, Dropdown, Badge } from '@edx/paragon';
-
 import { reduxHooks } from 'hooks';
-
 import messages from '../messages';
 
 export const AuthenticatedUserDropdown = () => {
@@ -29,7 +26,7 @@ export const AuthenticatedUserDropdown = () => {
           </span>
         </Dropdown.Toggle>
         <Dropdown.Menu style={{ backgroundColor: 'rgb(158,155,153)'}} className="dropdown-menu-right">
-          { getConfig().ENABLE_EDX_PERSONAL_DASHBOARD && (
+          {getConfig().ENABLE_EDX_PERSONAL_DASHBOARD && (
             <>
               <Dropdown.Header>{formatMessage(messages.dashboardSwitch)}</Dropdown.Header>
               <Dropdown.Item as="a" href="/edx-dashboard" className="active">
