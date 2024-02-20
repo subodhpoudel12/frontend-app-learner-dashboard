@@ -23,7 +23,6 @@ export const CourseList = () => {
     visibleList,
   } = useCourseListData();
   const isCollapsed = useIsCollapsed();
-  
   return (
     <div className="course-list-container">
       <div className="course-list-heading-container">
