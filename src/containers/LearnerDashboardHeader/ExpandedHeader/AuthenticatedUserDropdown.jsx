@@ -18,8 +18,8 @@ export const AuthenticatedUserDropdown = () => {
           as={AvatarButton}
           src={authenticatedUser.profileImage}
           id="user"
-          variant="primary"
-          className="p-3"
+          variant="light"
+          className="p-2 mr-1"
         >
           <span data-hj-suppress className="d-md-inline">
             {authenticatedUser.username}
@@ -37,7 +37,7 @@ export const AuthenticatedUserDropdown = () => {
                   {dashboard.label} {formatMessage(messages.dashboard)}
                 </Dropdown.Item>
               )}
-              <Dropdown.Divider />
+              {/* <Dropdown.Divider /> */}
             </>
           )}
           {!dashboard && getConfig().CAREER_LINK_URL && (
